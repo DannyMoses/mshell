@@ -7,3 +7,5 @@ gcc main.c -o mshell -std=c99
 if [[ $? -eq 0 ]]; then 
 		sudo mv mshell /usr/bin
 fi
+
+
