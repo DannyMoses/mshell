@@ -1,6 +1,5 @@
 /*
 * Author: Daniel Moses
-* mshell: The super simple shell within a shell
 */
 
 #include <stdio.h>
