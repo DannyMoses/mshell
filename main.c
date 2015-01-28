@@ -11,6 +11,12 @@ int main(int argc, char **argv)
 {
   printf("Welcome to Moses Shell, the most limited experience of your life!\n");
   printf("Version: 0.1.updatesain'tgonnahappen\n");
+  if(strcmp(argv[1], "-help") == 0)
+  {
+	printf("USAGE: mshell [commands]\n");
+	printf("simple type 'mshell' then whatever commands you want to be run at the start of the program\n");
+	return 0;
+  }
   for(int i = 1; i <= argc; i++)
     {
 	printf("executing command: %s \n", argv[i]);
