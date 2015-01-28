@@ -2,21 +2,23 @@ language: c
 
 compiler: gcc
 
+
+
 env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
-   - secure: "cp8Q/EMjx1f2uLSNuPijchZ/3+qHDcJFgl6n8Je85Jl69aAN9pAqL6MS6WMjWvj3pHN/VnBECL172GZ7Qy0Deeppvn7a5+NQG1eeOd77hFWIvt5VWTRWxoyCRmqWbiYKiJZBU5z/tR4iH/jsET8nCKDICUhx4UzqLdvJ9uyjvlc="
+   - secure: "oatwWyDl8LRhixvndPoxU9HCqY4iwpNrZKpKZQxN3+cnnwgBUAPnj1EzK2v6j/d5D0NrI9eAbdu26XWRGuOc6Rqyxr14HzIWgDPBOF8h1m6lIpeF04vHfETTtQ16QIwB9d4TNyTF1NJsoluhwbKIerbNyNIvGpNQUOEe0tc8SgQ="
 
 addons:
   coverity_scan:
     project:
       name: "DannyMoses/mshell"
-      
     notification_email: dannymoses555@gmail.com
     build_command_prepend: 
-    build_command:   "./configure"
+    build_command:   ./configure
     branch_pattern: coverity_scan
+
 
 script: ./configure
 
