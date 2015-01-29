@@ -1,8 +1,10 @@
 #!/bin/bash
 #This is the configuration/installation script for mshell
 
+echo "compiling main.c..."
 gcc main.c -o mshell -std=c99 
 
+echo "moving program to usr/bin..."
 # if there weren't any compile errors, install the program
 if [[ $? -eq 0 ]]; then 
 		sudo mv mshell /usr/bin
